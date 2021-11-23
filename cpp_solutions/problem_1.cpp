@@ -9,9 +9,9 @@ int sum_to_n(int n){
 
 int main(){
     unsigned int res;
-    int n3 = 999/3;
-    int n5 = 999/5;
-    int n15 = 999/15;
+    short int n3 = 999/3;
+    short int n5 = 999/5;
+    short int n15 = 999/15;
     res = 3*sum_to_n(n3) + 5*sum_to_n(n5) - 15*sum_to_n(n15);
     cout << res;
     return res;
