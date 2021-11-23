@@ -8,7 +8,7 @@ int sum_to_n(int n){
 }
 
 int main(){
-    double res;
+    unsigned int res;
     int n3 = 999/3;
     int n5 = 999/5;
     int n15 = 999/15;
