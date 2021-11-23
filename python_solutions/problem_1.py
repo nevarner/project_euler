@@ -6,6 +6,7 @@ we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
 Find the sum of all the multiples of 3 or 5 below 1000."""
 
+
 def problem_1(n: int = 1000) -> int:
     """The sum of numbers below 1000 which are divisible by 3 is the same
     as 3 times the sum of numbers from 1 to (1000//3). Similarly for 5 and 15.
@@ -16,10 +17,9 @@ def problem_1(n: int = 1000) -> int:
     def sum_to_n(n: int) -> int:
         """Sum from 1 to n is half of n+1 added together n times."""
         return n*(n+1)//2
-
-    n3 = (1000-1)//3
-    n5 = (1000-1)//5
-    n15 = (1000-1)//15
+    n3 = (n-1)//3
+    n5 = (n-1)//5
+    n15 = (n-1)//15
     res = 3*sum_to_n(n3) + 5*sum_to_n(n5) - 15*sum_to_n(n15)
     return res
 
