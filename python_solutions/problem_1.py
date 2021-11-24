@@ -22,6 +22,3 @@ def problem_1(n: int = 1000) -> int:
     n15 = (n-1)//15
     res = 3*sum_to_n(n3) + 5*sum_to_n(n5) - 15*sum_to_n(n15)
     return res
-
-
-print(problem_1())
