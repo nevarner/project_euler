@@ -6,9 +6,7 @@ from functools import lru_cache
 
 @lru_cache(maxsize=3)
 def fib_recursion(n: int) -> int:
-    if n == 0:
-        return 0
-    elif n == 1:
+    if n <= 2:
         return 1
     else:
         return fib_recursion(n-1) + fib_recursion(n-2)
@@ -22,4 +20,3 @@ def problem_2(max_value: int = 4_000_000) -> int:
             fib_sum += fib_recursion(i)
         i += 1
     return fib_sum
-
