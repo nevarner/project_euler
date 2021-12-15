@@ -9,11 +9,7 @@ def problem_4():
     ending in 3."""
     def is_palendrome(num):
         s = str(num)
-        l = len(s) - 1
-        res = []
-        for i, _ in enumerate(s[:3]):
-            res.append(s[i] == s[l - i])
-        return all(res)
+        return s == s[::-1]
 
     for x1 in np.arange(993, 102, -10):
         for x2 in np.arange(993, 102, -10):
